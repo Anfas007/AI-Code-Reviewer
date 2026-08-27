@@ -44,3 +44,9 @@ def root():
     return {
         "message": "AI Code Auto Reviewer API is running"
     }
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
