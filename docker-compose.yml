@@ -27,6 +27,9 @@ services:
     env_file:
       - ./backend/.env
 
+    security_opt:
+      - no-new-privileges:true
+
     depends_on:
       postgres:
         condition: service_healthy
