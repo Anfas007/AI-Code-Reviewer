@@ -130,10 +130,9 @@ The application runs using Docker Compose with:
         │    Database     │   │   Review Engine  │
         └─────────────────┘   └─────────────────┘
 
+```
 
-
-## Code Review Flow
-
+### Code Review Flow
 
 Python File
      │
@@ -162,5 +161,39 @@ PostgreSQL
      │
      ▼
 React Dashboard
+
+
+## 🛠️ Tech Stack
+
+*   **Frontend:** React, Vite, JavaScript, Tailwind CSS
+*   **Backend:** Python, FastAPI, Uvicorn, Pydantic, SQLAlchemy, Alembic
+*   **Code Analysis:** Python AST, Static Analysis Rules, Cyclomatic Complexity Analysis
+*   **AI Integration:** Google Gemini API
+*   **Database:** PostgreSQL (with JSONB support)
+*   **Authentication:** JWT, Argon2 Password Hashing
+*   **DevOps & Cloud:** Docker, Docker Compose, Nginx (Reverse Proxy), AWS EC2, Linux
+
+## 🎯 What I Learned
+
+Building this project end-to-end provided hands-on experience across the entire software development lifecycle, specifically:
+
+*   **Backend Engineering:** Designing scalable REST APIs with FastAPI, managing database ORMs with SQLAlchemy, and safely handling schema migrations with Alembic.
+*   **Advanced Code Analysis:** Going beyond standard logic to parse source code using Python AST, evaluate cyclomatic complexity, and integrate LLMs for dynamic code reviews.
+*   **Security Best Practices:** Implementing robust, stateless user authentication using JSON Web Tokens (JWT) and Argon2 password hashing.
+*   **Modern Frontend:** Building responsive and fast user interfaces using React, Vite, and Tailwind CSS.
+*   **Cloud Infrastructure & DevSecOps:** Containerizing multi-tier applications with Docker and Docker Compose, configuring Nginx as a reverse proxy, and deploying production-ready Linux architecture on AWS EC2.
+
+## 🔮 Future Improvements
+
+- [ ] Secure the application with a custom domain and HTTPS (Let's Encrypt/Certbot)
+- [ ] Integrate directly with GitHub repositories for automated Pull Request code reviews
+- [ ] Expand AST and AI analysis support to include additional programming languages
+- [ ] Implement advanced security vulnerability scanning rules
+- [ ] Offload heavy AI review processing to background jobs (e.g., Celery + Redis)
+- [ ] Build a fully automated CI/CD deployment pipeline using GitHub Actions
+- [ ] Add Redis caching for frequently requested review reports
+- [ ] Implement cloud object storage (AWS S3) for exporting and storing reports
+- [ ] Develop a comprehensive automated testing pipeline (pytest/Jest)
+
 
 
